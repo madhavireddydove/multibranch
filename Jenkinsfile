@@ -14,12 +14,6 @@ pipeline {
            echo "code building"
         }
      }
-
-         stage("Deploy artifact") { 
-         steps { 
-           echo "deploying artifact..."'
-         }
-       }     
   
    	}
 
