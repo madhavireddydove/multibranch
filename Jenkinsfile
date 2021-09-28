@@ -15,12 +15,11 @@ pipeline {
         }
      }
 
-         stage("Deploy application") { 
+         stage("Deploy artifact") { 
          steps { 
-           sh 'echo "deploying application..."'
+           echo "deploying artifact..."'
          }
-
-     }
+       }     
   
    	}
 
