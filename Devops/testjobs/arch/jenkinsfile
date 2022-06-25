@@ -3,8 +3,9 @@ agent any
 stages {
 stage {
 steps {
+sh "echo hello world"
 script {
-def script = value
+def script = "value"
 sh "echo ${script}"
 }
 }
@@ -12,7 +13,8 @@ sh "echo ${script}"
 stage {
 steps {
 script {
-def pipeline = cicd
+sh "echo hello world"
+def pipeline = "cicd"
 sh "echo ${pipeline}"
 }
 }
