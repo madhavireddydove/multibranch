@@ -1,0 +1,21 @@
+pipeline {
+agent any
+stages {
+stage {
+steps {
+script {
+def script = value
+sh "echo ${script}"
+}
+}
+}
+stage {
+steps {
+script {
+def pipeline = cicd
+sh "echo ${pipeline}"
+}
+}
+}
+}
+}
