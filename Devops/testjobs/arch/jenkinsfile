@@ -1,16 +1,15 @@
 pipeline {
 agent any
 stages {
-stage {
+stage('intializing script value') {
 steps {
-sh "echo hello world"
 script {
 def script = "value"
 sh "echo ${script}"
 }
 }
 }
-stage {
+stage('intializing pipeline value') {
 steps {
 script {
 sh "echo hello world"
